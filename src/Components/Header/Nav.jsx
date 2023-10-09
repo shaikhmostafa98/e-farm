@@ -32,21 +32,26 @@ const links = [
 const Nav = () => {
   return (
     <div className="mx-6 p-1 mt-4 ">
-      <div className="flex justify-center lg:hidden gap-5 md:gap-16">
+      <div className="lg:hidden flex justify-center align-middle my-2">
+        <a href="#" className="btn btn-ghost normal-case " title="Fresh Food">
+          <img src={logo} alt="" className="md:w-16 w-14" />
+        </a>
+      </div>
+      <div className="flex justify-center lg:hidden gap-7 md:gap-16">
         <a className=" ">
-          <HiHome className="text-4xl" />
+          <HiHome className="text-3xl" />
         </a>
         <a className=" ">
-          <HiOutlineBookOpen className="text-4xl" />
+          <HiOutlineBookOpen className="text-3xl" />
         </a>
         <a className=" ">
-          <HiAnnotation className="text-4xl" />
+          <HiAnnotation className="text-3xl" />
         </a>
         <a className=" ">
-          <HiSearch className="text-4xl" />
+          <HiSearch className="text-3xl" />
         </a>
         <a className=" ">
-          <HiOutlineShoppingCart className="text-4xl" />
+          <HiOutlineShoppingCart className="text-3xl" />
         </a>
       </div>
       <div className="navbar hidden lg:flex  ">
@@ -58,7 +63,7 @@ const Nav = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             {links.map((link, index) => (
-              <li key={index} className="text-xl font-bold">
+              <li key={index} className="text-xl font-medium">
                 <a href={link.link}>{link.name}</a>
               </li>
             ))}
@@ -66,10 +71,10 @@ const Nav = () => {
         </div>
         <div className="navbar-end">
           <a href="#" className="border-l px-2">
-            <HiSearch className="text-4xl" />
+            <HiSearch className="text-3xl" />
           </a>
           <a href="#" className="border-l px-2">
-            <HiOutlineShoppingCart className="text-4xl" />
+            <HiOutlineShoppingCart className="text-3xl" />
           </a>
         </div>
       </div>
